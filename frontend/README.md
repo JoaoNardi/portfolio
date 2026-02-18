@@ -1,59 +1,77 @@
-# Frontend
+# Frontend — Portfólio João Nardi
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+Aplicação SPA desenvolvida com **Angular** e **TypeScript**, responsável pela interface do portfólio pessoal.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🛠 Tecnologias
+
+| Tecnologia  | Versão   | Uso                             |
+|-------------|----------|---------------------------------|
+| Angular     | 21.1.4   | Framework principal             |
+| TypeScript  | 5.9.3    | Tipagem estática                |
+| Node.js     | 22.20.0  | Ambiente de execução / tooling  |
+| TailwindCSS | 4.1.18   | Estilização utilitária          |
+
+---
+
+## 🏗 Estrutura de Diretórios
+
+```
+src/
+└── app/
+    ├── core/          → Serviços globais, guards, interceptors
+    ├── shared/        → Componentes reutilizáveis (botões, cards, etc.) e imports
+    ├── components/    → Componentes específicos do projeto (banner de projetos)
+    ├── pages/         → Páginas montadas (Home, Currículo, Projetos, Sobre etc.)
+    ├── layout/        → Header, navbar, footer e estrutura geral
+    └── app.routes.ts  → Definição de rotas
+```
+
+---
+
+## 🚀 Como Executar
+
+**Pré-requisitos:** Node.js 22+ e Angular CLI instalados.
 
 ```bash
+# Instalar dependências
+npm install
+
+# Rodar em modo desenvolvimento
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Acesse em: [http://localhost:4200](http://localhost:4200)
 
 ```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
+# Build para produção
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Os artefatos gerados ficam em `dist/`.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 🎨 Design
 
-```bash
-ng test
-```
+A interface foi pensada com base em:
 
-## Running end-to-end tests
+- Hierarquia visual clara entre seções
+- Espaçamento consistente via sistema de escala do Tailwind
+- Responsividade desktop e mobile
+- Paleta de cores definidas
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 🔮 Evoluções Planejadas
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- Integração com a futura API backend
+- Dark mode
+- Animações com Angular Animations
+- Internacionalização (i18n)
+- Deploy automatizado via CI/CD
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> Para contexto geral do projeto (monorepo, backend, docker), consulte o [README da raiz](../README.md).
