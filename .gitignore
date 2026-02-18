@@ -1,0 +1,19 @@
+# Node
+node_modules/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Java (se for Spring)
+target/
+*.class
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
