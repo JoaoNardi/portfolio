@@ -51,7 +51,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${karla.className} min-h-full px-6`}>
+      <body className={`${karla.className} min-h-full px-6 dark:bg-[#1E1F22] transition-colors duration-300`}>
         {/*<Analytics />*/}
         <Header />
         <main className="mx-auto max-w-prose pb-4">
@@ -62,29 +62,12 @@ export default function RootLayout({
           <div className="flex items-center gap-4">
             <a
               className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              href="https://github.com/LukeberryPi/blog"
+              href="https://github.com/JoaoNardi/portfolio"
               target="_blank"
             >
-              Code
-            </a>
-            <Link
-              className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              target="_blank"
-              href="/rss.xml"
-            >
-              RSS Feed
-            </Link>
-            <a
-              className="decoration-zinc-500 underline-offset-4 transition-transform sm:hover:underline dark:decoration-zinc-400"
-              href="https://x.com/LukeberryPi"
-              target="_blank"
-            >
-              @LukeberryPi
-            </a>
+              Repositório do Portólio
+            </a>           
           </div>
-          <blockquote className="text-zinc-800 dark:text-zinc-300">
-            Smile, you&apos;re alive :)
-          </blockquote>
         </footer>
       </body>
     </html>

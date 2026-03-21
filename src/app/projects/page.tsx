@@ -123,14 +123,16 @@ function ProjectCard({
 export default function ProjectsPage() {
   return (
     <>
-      <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
-        Projects
-      </h1>
-      <div className="space-y-20">
-        {projects.map((project) => (
-          <ProjectCard key={project.url} {...project} />
-        ))}
-      </div>
+      <section id="projetos" className="scroll-mt-28">
+        <h1 className="mb-16 mt-4 text-center text-4xl max-sm:text-4xl">
+          Projetos
+        </h1>
+        <div className="space-y-20">
+          {projects.map((project) => (
+            <ProjectCard key={project.url} {...project} />
+          ))}
+        </div>
+      </section>
     </>
   );
 }
