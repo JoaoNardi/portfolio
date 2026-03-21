@@ -3,7 +3,7 @@ export default function AboutPage() {
     <>
       <section id="sobre" className="scroll-mt-28">
 
-        <h1 className="mb-16 mt-4 text-center text-4xl max-sm:text-4xl">
+        <h1 className="mb-7 mt-14 text-center text-4xl max-sm:text-4xl">
           Sobre mim
         </h1>
         <article>
@@ -47,9 +47,12 @@ export default function AboutPage() {
           </p>
           <p>Mesmo assim, nunca deixei o Java de lado, continuando a utilizá-lo em projetos pessoais e estudos paralelos.</p>
           <p>
+            Recentemente me mudei para Santos - SP, buscando estar mais próximo dos polos tecnológicos do estado e expandir meus horizontes.
             Hoje, desenvolver soluções é algo que faço e pretendo continuar fazendo por muito tempo.
-            Ainda assim, existe uma curiosidade constante que me acompanha: o desenvolvimento de jogos.
-            A ideia de criar experiências interativas sempre me chamou atenção, e em algum momento, pretendo explorar esse universo, nem que seja como hobby.
+          </p>
+          <p>
+            Ainda assim, existe uma curiosidade que nunca saiu do radar: o desenvolvimento de jogos.
+            A ideia de criar experiências interativas, que envolvem e marcam pessoas (como aconteceu comigo, da infância até hoje) sempre me chamou atenção. E, em algum momento, quero explorar esse universo, nem que seja como um projeto pessoal que una tudo o que eu gosto em tecnologia.
           </p>
 
         </article>
